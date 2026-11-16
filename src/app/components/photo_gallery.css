@@ -1,0 +1,43 @@
+.photoGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 6px;
+  margin: 8px 0 16px;
+}
+
+.photoGallery button {
+  all: unset;
+  cursor: zoom-in;
+}
+
+.photoGallery img,
+.photoGallery .missing {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.photoGallery .missing {
+  background: var(--surface);
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  cursor: zoom-out;
+  z-index: 10;
+}
+
+.lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+}

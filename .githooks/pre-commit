@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks commits containing personal data (postcodes, addresses, emails...). See AGENTS.md.
+# Enabled by `yarn install` (the "prepare" script), or: git config core.hooksPath .githooks
+exec yarn -s check:private

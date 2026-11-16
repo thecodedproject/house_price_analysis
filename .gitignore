@@ -1,0 +1,11 @@
+*.sw*
+node_modules/
+dist/
+.DS_Store
+
+# Scraped data, images and the Playwright browser profile stay local only.
+data/
+
+# Personal settings (e.g. Zoopla login email) - copy config/zoopla.example.json
+config/zoopla.json
+config/area.json
